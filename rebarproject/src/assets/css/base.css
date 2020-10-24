@@ -1,0 +1,117 @@
+@import "./normalize.css";
+
+/*:root -> 获取根元素html*/
+:root {
+  --color-text: #666;
+  --color-high-text: #04af8f;
+  --color-tint: linear-gradient(to right,#29644F,#5FEFBE);
+  --color-background:#fdfdfd;
+  /*--color-background:linear-gradient(to right,#4161b4,#00a6cc);*/
+  /*--color-background: linear-gradient(to bottom,#fff,#abbaab);*/
+  /*--color-background:*/
+  /*                radial-gradient(circle at 50% 0,*/
+  /*                rgb(130,180,204),*/
+  /*                rgba(255,0,0,0) 90.71%),*/
+
+  /*                radial-gradient(circle at 99% 0,*/
+  /*                rgb(9,31,100),*/
+  /*                rgba(255,0,0,0) 90.71%),*/
+
+  /*                radial-gradient(circle at 70% 35%,*/
+  /*                rgb(225,20,20),*/
+  /*                rgba(0,0,255,0) 70.71%),*/
+
+  /*                radial-gradient(circle at 10% 90%,*/
+  /*                rgb(120,130,154),*/
+  /*                rgba(0,0,255,0) 60.71%),*/
+
+  /*                radial-gradient(circle at 80% 75%,*/
+  /*                rgb(9,31,100),*/
+  /*                rgba(0,255,0,0) 90.71%) beige;*/
+
+
+  /*按钮颜色和字体色*/
+  /*--color-button:#101830;*/
+  --color-button:#1880D0;
+  --color-button-color:rgba(225,225,225,0.6);
+  /*外侧导航栏背景色与字的颜色*/
+  /*--color-nav:rgba(0,0,0,0.3);*/
+  /*--color-nav-color:rgb(225,225,225);*/
+  --color-nav:#1880D0;
+  --color-nav-color:#fff;
+  /*里侧导航栏背景色与字的颜色*/
+  --color-innav:#1880D0;
+  --color-innav-color:#fff;
+  /*--color-innav: rgba(0,0,0,0.3);*/
+  /*--color-innav-color:#fff;*/
+  /*底部背景色与字的颜色*/
+  /*--color-tab:rgba(0,0,0,0.3);*/
+  /*--color-tab-color:rgba(225,225,225,0.6);*/
+  --color-tab:#fff;
+  --color-tab-color:#4c4c4c;
+  /*控制栏活跃颜色*/
+  /*--color-tabcontrol-active: #483858;*/
+  --color-tabcontrol-active: #1880D0;
+  /*展示list任务背景色*/
+  /*--color-tasklistitem:rgba(0,0,0,0.5);*/
+  --color-tasklistitem:#fff;
+  /*--color-tasklistitem-color: rgba(225,225,225,1);*/
+  --color-tasklistitem-color:#000;
+  /*展示详情任务背景色*/
+  /*--color-betailbody:rgba(0,0,0,0.2);*/
+  /*--color-betailbody-kind:rgba(0,0,0,0.2);*/
+  /*--color-betailbody-color: rgba(225,225,225,1);*/
+  --color-betailbody:#fff;
+  --color-betailbody-kind:#fff;
+  --color-betailbody-color:#000;
+  /*--color-background:linear-gradient(to top,#eef2f3,#8e9eab);*/
+  --font-size: 14px;
+
+  --line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  user-select: none; /* 禁止用户鼠标在页面上选中文字/图片等 */
+  -webkit-tap-highlight-color: transparent; /* webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用数值调节 */
+  background: var(--color-background);
+  color: var(--color-text);
+  /* rem vw/vh */
+  width: 100vw;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+
+.clear-fix::after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.clear-fix {
+  zoom: 1;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
